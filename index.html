@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <nav>
+        <div class="left">
+            <a href="/">Ayas</a>
+        </div>
+
+        <div class="right">
+            <a href="https://github.com/me50/Ayas0910"_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+        </a>
+
+        
+            <a href="https://www.linkedin.com/in/ayas-v-613726205/"_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+        </a>
+
+        
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+            <i class="fa-solid fa-envelope"></i>
+                <span>Mail</span>
+        </a></div>
+
+    </nav>
+    <main>
+
+        <section class="hero-section">
+            <div class="text"><h2>Hi, I'm Ayas👋</h2>
+            <p>A passionate web developer dedicated to creating modern, responsive, and user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I strive to turn ideas into reality through clean design and efficient code.
+
+                Explore my projects, learn more about my skills, and see how I can contribute to your next big idea. Let’s build something amazing together!.</p>
+
+                 <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <!-- <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a> -->
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                 </div>
+        </div>
+            <div class="headshot">
+                <img src="Images/Ayas.png" alt="Ayas headshot">
+            </div>
+        </section>
+        <section id="skills" class="skill-section">
+            <h2>Skills</h2>
+
+            <div class="text">
+                I specialize in web development, focusing on building modern, responsive, and user-friendly websites. My expertise lies in:
+
+                HTML: Creating well-structured and semantic web pages.
+                CSS: Styling websites with attention to detail, ensuring designs are both visually appealing and adaptable to all devices.
+                JavaScript: Adding interactivity and functionality to deliver dynamic user experiences.
+                With these skills, I aim to craft seamless and engaging websites that bring ideas to life. Explore my portfolio to see some of my work in action!
+            </div>
+
+            <div class="cells">
+
+                <div class="cell" >
+                    <img src="Images/html-logo.webp" alt="html-logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="Images/css-logo.webp" alt="html-logo">
+                    <span>css</span>
+                </div>
+
+                <div class="cell">
+                    <img src="Images/javascript-logo.webp" alt="html-logo">
+                    <span>Javascript</span>
+                </div>
+
+            </div>
+        </section>
+        <!-- <section id="testimony" class="testmony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="personal-details">
+                    <img src="Images/testimony-headshot1.webp">
+                    <p>Abi</p>
+                    <p>Bank of America</p>
+                </div>
+                <div class="text">
+                    "I have had the pleasure of working with Ayas and can confidently say they are an exceptional professional with great potential. Ayas’s enthusiasm for learning and their ability to adapt to new challenges have always stood out. They approach tasks with diligence, curiosity, and a positive attitude that makes collaboration seamless and enjoyable.
+
+Ayas consistently demonstrates a strong analytical mindset and an eagerness to contribute meaningfully to projects. I am certain that their dedication and skill set will continue to drive their success in any endeavor they undertake.
+
+It has been a privilege to witness Ayas’s growth, and I look forward to seeing all the amazing things they will accomplish in the future."
+                </div>
+            </div>
+        </section> -->
+        <section id="contact" class="contact-section">
+            <h2 >Contact us</h2>   
+            <div class="group">
+                <div class="text">
+
+                    I’d love to hear from you! Whether you’re looking to collaborate, have questions about my work, or just want to say hello, feel free to reach out.😊
+                    
+                </div>
+        
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="922464f8-16b4-4fae-b611-178a58e7c44b" />
+                    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                    <input type="hidden" name="from_name" value="My Website" />
+        
+                    
+                        
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                        
+                        
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                        
+                        
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Your message" cols="30" rows="10"></textarea>
+                        
+                    
+                    <button class="form-submit" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        
+    </main>
+</body>
+</html>
+

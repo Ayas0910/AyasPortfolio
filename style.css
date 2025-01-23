@@ -1,0 +1,352 @@
+
+  :root{
+    --text-color: #1a1c20; /* Dark gray for text */
+    --link-color: #4a76cc; /* Blue for links */
+    --background-color: #eeeff1; /* Light gray background */
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: 'Poppins','sans-serif';
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0px auto;
+  }
+
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding: 0px 50px;
+    height: 80px;
+    align-items: center;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+nav .right a{
+    margin: 0px 10px;
+    color: var(--text-color);
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/* hero section-1 */
+
+.hero-section{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    margin: 50px 0px;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.hero-section .text h2{
+    font-size: 45px;
+}
+
+.hero-section .text{
+        flex: 5;
+}
+
+.hero-section .headshot{
+        flex: 2;
+        display: flex;
+        justify-content: right;
+}
+
+.hero-section .headshot img{
+    border-radius: 50%;
+    width: 400px;
+}
+
+.hero-section .text .links a {
+        border: 2px solid var(--link-color);
+        padding: 7px 10px;
+        display: inline-block;
+        border-radius: 8px;
+        margin-right: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        transition: .1s;
+}
+
+.hero-section .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+@media(max-width:600px){
+    nav{
+        padding: 0px 20px;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+    nav .right a i{
+        font-size: 20px;
+    }
+
+    nav .right a:last-child{
+        background-color: transparent;
+        color: var(--text-color);
+        padding: 0;
+    }
+
+    /* Skill section */
+
+    .skill-section{
+        padding: 0px 20px;
+    }
+
+    .skill-section .cells .cell span{
+        font-size: 16px;
+    }
+
+    .contact-section{
+        padding: 0px 20px;
+    }
+
+    .testmony-section{
+        padding: 0px 20px;
+    }
+
+}
+
+@media(max-width:850px){
+   /* section-1 hero */
+   .hero-section .text h2{
+    font-size: 35px;
+   }
+}
+
+@media(max-width:740px){
+    /* section-1 hero */
+    .hero-section {
+     flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img{
+        width: 300px;
+    }
+
+    .hero-section{
+        padding: 0px 20px;
+    }
+
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+
+    /* testimony */
+
+    .testmony-section {
+        text-align: center;
+    }
+
+    .testmony-section .group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* contact us */
+
+    .contact-section .group{
+        flex-direction:column;
+    }
+ }
+
+ /* skill-section */
+
+ .skill-section{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+ }
+
+ .skill-section h2{
+        text-align: center;
+        font-size: 35px;
+ }
+
+ .skill-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+ .skill-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .skill-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+ }
+
+ skill-section .cells .cell img{
+    width: 30px;
+    height:30px ;
+    object-fit: contain;
+    border-radius: 2px;
+ }
+
+ /* testimony section */
+
+ .testmony-section{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+ }
+
+ .testmony-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+ }
+
+ .testmony-section .group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+ }
+
+ .testmony-section .group .personal-details{
+    text-align: center;
+    flex: 2;
+ }
+
+ .testmony-section .group .text{
+    flex: 8;
+ }
+
+.testmony-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+ 
+.testmony-section .group .personal-details img{
+    width: 200px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testmony-section .group .personal-details   p{
+    font-weight: 600;
+}
+
+.testmony-section .group .personal-details   p:last-child{
+    font-weight: normal;
+}
+
+/* contact us */
+
+.contact-section{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form textarea{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form .form-input{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form .form-submit{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color: #eeeff1;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form .form-submit:hover{
+       filter: brightness(0.9);
+}
+
+.contact-section .form-label{
+    font-weight: 600;
+}
+
+
+
+
+ 
+
+
